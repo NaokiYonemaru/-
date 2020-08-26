@@ -44,7 +44,6 @@ a {
     margin-left: 30px;
 }
 .top-wrapper {
-    width: 100%;
     height: 600px;
 }
 .top-container {
@@ -58,6 +57,7 @@ a {
     color: black;
     text-align: center;
     padding: 50px 150px;
+    width: 650px;
 }
 .left-container {
     width: 200px;
@@ -72,12 +72,12 @@ a {
     margin-top: 30px;
 }
 .sns {
-    padding-top: 60px;
-    padding-right: 15px;
+    padding: 60px 0 0 15px;
+    width: 200px;
 }
 .btn {
     display: inline-block;
-    margin-right: 30px;
+    margin: 0 25px 0 10px;
 }
 .inner-right {
     background-image: url(../blog/photo-158.jpeg);
@@ -86,14 +86,14 @@ a {
     width: 100%;
     display: inline-block;
 }
-.inner-right h1 {
+.inner-right h3 {
     color: white;
     font-family: cursive;
+    font-size: 30px;
     letter-spacing: 6px;
     font-size: 50px;
     opacity: 0.9;
-    margin-left: 50px;
-    margin-top: 210px;
+    margin: 210px 0 0 50px;
 }
 .subject {
     text-align: center;
@@ -120,10 +120,10 @@ article {
     width: 100%;
     height: 200px;
 }
-.container h3 {
+.container h4 {
     padding: 0;
     margin: 0;
-    font-size: 17px;
+    font-size: 20px;
     margin-bottom: 6px;
 }
 time {
@@ -174,6 +174,9 @@ time {
     margin: 20px;
     width: 30%;
 }
+.aside-wrapper h5 {
+    font-size: 18px;
+}
 .aside-wrapper ul {
     padding-right: 30px;
 }
@@ -183,24 +186,92 @@ time {
 .footer {
     text-align: center;
 }
-@media screen and (max-width:700px){
+
+@media(max-width:670px) {
+    body {
+        font-size: 26px;
+    }
+    .header {
+        height: 100px;
+    }
+    .header h1 {
+        font-size: 32px;
+        padding-top: 10px;
+    }
+    .main {
+        width: 1000px;
+    }
+    .top-wrapper {
+        margin-top: 200px;
+        height: 1500px;
+    }
     .top-container {
         flex-direction: column-reverse;
-        margin-top: 650px;
     }
-    .left-container {
+    .inner-right {
+        height: 100%;
+    }
+    .inner-left {
+        width: 100%;
+    }
+    .sns {
+        margin: 0 auto;
+        width: 400px;
+    }
+    .btn {
+        font-size: 40px;
+        margin: 0 50px 0 30px;
+    }
+    .subject {
+        font-size: 40px;
+    }
+    article {
         margin: 0;
+        font-size: 30px;
     }
     .container {
-        width: 100%;
+        width: 40%;
+        height: 800px;
         margin: 25px;
+    }
+    .container h4 {
+        font-size: 36px;
+    }
+    .photo {
+        height: 400px;
+    }
+    time {
+        font-size: 26px;
+    }
+    .text {
+        height: 140px;
+        overflow: hidden;
+    }
+    .read {
+        font-size: 18px;
+        padding: 20px;
+    }
+    .page {
+        padding: 24px 28px;
+        font-size: 20px;
     }
     .aside-container {
         flex-direction: column;
     }
     .aside-wrapper {
-        width: 100%;
         margin: 0 auto;
-        margin-top: 60px;
+        margin-top: 100px;
+        font-size: 30px;
+        width: 500px;
+    }
+    .aside-wrapper h5 {
+        font-size: 26px;
+    }
+    input {
+        font-size: 38px;
+    }
+    .footer {
+        width: 100%;
+        margin-left: 300px;
     }
 }
