@@ -152,7 +152,7 @@ time {
     text-align: center;
     margin-top: 100px;
 }
-.pager li {
+.pager li,.index-btn {
     display: inline-block;
     font-size: 10px;
 }
@@ -162,7 +162,7 @@ time {
     border-radius: 50%;
 }
 .aside {
-    padding-bottom: 140px;
+    padding-bottom: 80px;
     background-color: rgba(240, 240, 240);
 }
 .aside-container {
@@ -180,6 +180,61 @@ time {
 .aside-wrapper ul {
     padding-right: 30px;
 }
+.slide-wrapper {
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+}
+.slide-title {
+    margin-bottom: 30px;
+}
+.change-btn-wrapper {
+    width: 400px;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+.change-btn-wrapper:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+.prev-btn {
+    cursor: pointer;
+    float: left;
+    display: none;
+}
+.next-btn {
+    cursor: pointer;
+    float: right;
+}
+.slides {
+    padding: 0;
+    display: inline-block;
+    margin: 0 auto;
+}
+.slide {
+    display: none;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 5px 5px 5px rgba(200, 200, 200, 0.7);
+    margin-bottom: 20px;
+}
+.slide img {
+    width: 400px;
+    height: 250px;
+}
+.active {
+    display: block;
+}
+.index-btn-wrapper {
+    margin-top: 20px;
+}
+.index-btn {
+    cursor: pointer;
+    border: 1px solid rgba(180, 180, 180, 0.8);
+    padding: 13px 18px;
+    border-radius: 50%;
+}
 .calendar {
     display: inline-block;
 }
@@ -187,9 +242,12 @@ time {
     text-align: center;
 }
 
+/* メディアクエリ メディアクエリ メディアクエリ メディアクエリ メディアクエリ */
+
 @media(max-width:670px) {
     body {
         font-size: 26px;
+        width: 100%;
     }
     .header {
         height: 100px;
@@ -251,7 +309,7 @@ time {
         font-size: 18px;
         padding: 20px;
     }
-    .page {
+    .page,.index-btn {
         padding: 24px 28px;
         font-size: 20px;
     }
@@ -269,6 +327,9 @@ time {
     }
     input {
         font-size: 38px;
+    }
+    .prev-btn,.next-btn {
+        font-size: 22px;
     }
     .footer {
         width: 100%;
