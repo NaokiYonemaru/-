@@ -46,6 +46,9 @@ img {
     line-height: 40px;
     margin-left: 30px;
 }
+.main {
+    width: 100%;
+}
 .top-wrapper {
     height: 600px;
 }
@@ -154,6 +157,7 @@ time {
 .pager {
     text-align: center;
     margin-top: 100px;
+    padding-inline-start: 0px;
 }
 .pager li,.index-btn {
     display: inline-block;
@@ -170,6 +174,7 @@ time {
 }
 .aside-container {
     display: flex;
+    flex-wrap: wrap;
 }
 .aside-wrapper {
     text-align: center;
@@ -243,6 +248,9 @@ time {
 .calendar {
     display: inline-block;
 }
+.shadow-btn {
+    display: none;
+}
 .footer {
     text-align: center;
 }
@@ -250,94 +258,71 @@ time {
 /* メディアクエリ メディアクエリ メディアクエリ メディアクエリ メディアクエリ */
 
 @media(max-width:670px) {
-    body {
-        font-size: 26px;
-        width: 100%;
-    }
     .header {
-        height: 100px;
+        height: 120px;
     }
-    .header h1 {
-        font-size: 32px;
-        padding-top: 10px;
-    }
-    .main {
-        width: 1000px;
-    }
-    .top-wrapper {
-        margin-top: 200px;
-        height: 1500px;
+    .header-left,.header-right {
+        padding: 0;
+        float: none;
+        text-align: center;
     }
     .top-container {
-        flex-direction: column-reverse;
-    }
-    .inner-right {
-        height: 100%;
+        margin: 200px 10px;
     }
     .inner-left {
-        width: 100%;
-    }
-    .sns {
-        margin: 0 auto;
-        width: 400px;
-    }
-    .btn {
-        font-size: 40px;
-        margin: 0 50px 0 30px;
+        display: none;
     }
     .subject {
-        font-size: 40px;
+        font-size: 36px;
+        margin-top: 60px;
     }
     article {
         margin: 0;
-        font-size: 30px;
     }
     .container {
-        width: 40%;
-        height: 800px;
+        width: 100%;
+        height: 560px;
         margin: 25px;
     }
-    .container h4 {
-        font-size: 36px;
-    }
     .photo {
-        height: 400px;
+        height: 250px;
+    }
+    .container h4 {
+        font-size: 24px;
     }
     time {
-        font-size: 26px;
+        font-size: 20px;
     }
     .text {
-        height: 140px;
+        height: 102px;
         overflow: hidden;
     }
     .read {
-        font-size: 18px;
-        padding: 20px;
+        padding: 24px;
     }
-    .page,.index-btn {
-        padding: 24px 28px;
-        font-size: 20px;
+    .page {
+        padding: 20px 22px;
     }
     .aside-container {
         flex-direction: column;
     }
     .aside-wrapper {
-        margin: 0 auto;
-        margin-top: 100px;
-        font-size: 30px;
-        width: 500px;
-    }
-    .aside-wrapper h5 {
-        font-size: 26px;
-    }
-    input {
-        font-size: 38px;
-    }
-    .prev-btn,.next-btn {
-        font-size: 22px;
-    }
-    .footer {
+        margin: auto;
         width: 100%;
-        margin-left: 300px;
+        margin-top: 30px;
+    }
+    .slide-wrapper {
+        padding: 0 25px;
+    }
+    .index-btn {
+        padding: 15px 20px;
+    }
+    .shadow-btn {
+        display: inline-block;
+        width: 100%;
+    }
+    .btn {
+        font-size: 24px;
+        margin: 0 35px 0 20px;
     }
 }
