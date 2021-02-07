@@ -157,7 +157,7 @@ article {
     display: none;
 }
 #modal.hidden {
-    transform: translate(0, -1200px);
+    transform: translate(0, -1000px);
 }
 .container {
     background-color: white;
@@ -274,10 +274,15 @@ time {
         margin: 0;
     }
     #modal {
-        width: 70%;
+        width: 95%;
+        position: fixed;
+        top: 5px;
     }
     #modal.hidden {
-        transform: translate(0, -1700px);
+        transform: translate(0, -2000px);
+    }
+    #modal p {
+        font-size: 10px;
     }
     .container {
         width: 100%;
