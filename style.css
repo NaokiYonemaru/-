@@ -204,7 +204,7 @@ time {
 }
 .soccer {
     height: 400px;
-    background-image: url(https://github.com/NaokiYonemaru/My-roots/blob/master/image/IMG_0006_Original.jpg?raw=true);
+    background-image: url(https://raw.githubusercontent.com/NaokiYonemaru/My-roots/master/image/IMG_0006_Original.jpg);
     background-size: cover;
     background-position: center;
     width: 100%;
